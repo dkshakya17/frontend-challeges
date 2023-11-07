@@ -1,0 +1,90 @@
+/* Basic reset */
+
+$white: #fff;
+$gray: #f3f4f6;
+$blue: #3B82F6;
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+  background-color: $gray;
+}
+
+
+.email {
+  display: flex;
+
+  &-list {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    &-item {
+      padding: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      transition: 0.1s;
+      border-radius: 0.5rem 0 0 0.5rem;
+      cursor: pointer;
+
+      .title {
+        pointer-events: none;
+      }
+
+      &:hover {
+        background-color: $white;
+      }
+
+      &-active {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+
+  &-body {
+    flex: 0 0 40%;
+    padding: 1.5rem;
+    background-color: $white;
+    padding-top: 2rem;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+  }
+}

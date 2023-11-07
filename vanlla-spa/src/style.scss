@@ -1,0 +1,55 @@
+/* Basic reset */
+
+$dark: #1F2937;
+$white: #fff;
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+nav.header {
+  width: 100%;
+  background-color: rgba($color: $dark, $alpha: 0.9);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  a.nav-link {
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+.router {
+  padding: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}

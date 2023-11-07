@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy - Search Engine</title>
+</head>
+
+<body class="bg-gray-100 p-10 min-h-screen w-full items-center flex flex-col">
+    <div class="fixed w-full left-0 top-0 h-1 bg-gray-300 z-40 hidden" id="loader">
+        <div class="loader h-full w-1/2 bg-blue-500"></div>
+    </div>
+    <input type="search" name="search" id="search" class="p-4 shadow-md text-xl w-2/3" placeholder="Search for GIFs">
+    <div class="flex gap-6 flex-wrap mt-6 justify-center" id="results-wrapper">
+
+    </div>
+    <button id="load-more" class="bg-gray-100 duration-300 hover:bg-gray-300 font-semibold py-3 rounded text-blue-700 px-16 hidden mt-6">Load More</button>
+    <template id="result">
+        <a class="result p-2 rounded shadow-md block" target="_blank">
+            <img class="h-64">
+        </a>
+    </template>
+</body>
+
+</html>
